@@ -1,0 +1,65 @@
+/* blocks */
+
+/* Hero */
+
+.hero-block {
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  padding: 15rem 2rem 8rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.hero__title {
+  color: var(--color-secondary);
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+.hero__heading {
+  color: var(--color-secondary);
+  margin: 0;
+  width: 100%;
+}
+
+.hero__description {
+  border: 5px solid #fff;
+  color: var(--color-body-text);
+  background-color: rgba(247, 247, 247, 1);
+  margin: 0;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.hero__date {
+  color: var(--color-body-text);
+  font-family: var(--font-familly-cocogoose);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-block {
+    background-size: cover;
+    padding: 15rem 0 15rem 20rem;
+  }
+
+  .hero__heading {
+    font-size: 5.5rem;
+    width: 70%;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    min-width: 606.438px;
+    width: 65%;
+    font-size: 1.9rem;
+  }
+}
