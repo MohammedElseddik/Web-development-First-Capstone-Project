@@ -183,7 +183,7 @@
 }
 
 .icon {
-  fill: var(--color-accent);
+  fill: var(--color-heading);
 }
 
 @media screen and (min-width: 768px) {
