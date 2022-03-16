@@ -1,0 +1,69 @@
+.about-info {
+  padding: 10rem 3rem;
+  background-image: url(../img/bkgrnd.png);
+  background-size: cover;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-heading {
+  color: var(--color-secondary);
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.about-description {
+  background-color: rgb(255, 254, 254);
+  border: 3px solid var(--color-accent);
+  color: var(--color-body-text);
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.contact-message {
+  font-size: 2rem;
+}
+
+.container span a {
+  border-bottom: 2px solid var(--color-body-text);
+  color: var(--color-body-text);
+  font-size: 2rem;
+  font-weight: 600;
+  transition: color 0.4s ease;
+}
+
+.container span a:hover {
+  color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .about-heading {
+    font-size: 5rem;
+  }
+
+  .about-description {
+    font-size: 1.9rem;
+    width: 60%;
+  }
+
+  .contact-message {
+    font-size: 2.2rem;
+  }
+
+  .container span a {
+    font-size: 2.2rem;
+  }
+}
