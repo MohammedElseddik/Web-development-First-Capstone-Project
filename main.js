@@ -1,103 +1,103 @@
-const navBar = document.querySelector(".nav");
-const navList = document.querySelector(".nav__list");
-const navToggle = document.querySelector(".nav__toggler");
-const toggleFirstdBar = document.querySelector(".first-bar");
-const toggleSecondBar = document.querySelector(".second-bar");
-const toggleThirdBar = document.querySelector(".third-bar");
-const navItems = document.querySelectorAll(".nav__item");
-const featuredSection = document.querySelector(".featured-section");
+const navBar = document.querySelector('.nav');
+const navList = document.querySelector('.nav__list');
+const navToggle = document.querySelector('.nav__toggler');
+const toggleFirstdBar = document.querySelector('.first-bar');
+const toggleSecondBar = document.querySelector('.second-bar');
+const toggleThirdBar = document.querySelector('.third-bar');
+const navItems = document.querySelectorAll('.nav__item');
+const featuredSection = document.querySelector('.featured-section');
 
 function opneMenu() {
   navItems.forEach((elem) => {
-    elem.classList.toggle("mobile-menu__item");
-    elem.classList.remove("active-item");
+    elem.classList.toggle('mobile-menu__item');
+    elem.classList.remove('active-item');
   });
-  toggleSecondBar.classList.toggle("hidden");
-  toggleFirstdBar.classList.toggle("transform");
-  toggleThirdBar.classList.toggle("transform");
-  document.body.classList.toggle("no-scroll");
-  navBar.classList.toggle("nav");
-  navBar.classList.toggle("mobile-menu__nav");
-  navList.classList.toggle("mobile-menu");
+  toggleSecondBar.classList.toggle('hidden');
+  toggleFirstdBar.classList.toggle('transform');
+  toggleThirdBar.classList.toggle('transform');
+  document.body.classList.toggle('no-scroll');
+  navBar.classList.toggle('nav');
+  navBar.classList.toggle('mobile-menu__nav');
+  navList.classList.toggle('mobile-menu');
 }
 
-["click", "keypress"].forEach((event) => {
+['click', 'keypress'].forEach((event) => {
   navToggle.addEventListener(event, opneMenu);
 });
 
 const projectObjects = [
   {
-    name: "Leilani Montoya",
+    name: 'Leilani Montoya',
     speakerInfo: [
-      "Leilani Montoya is a PHD, MBA, M.A, B.Sc. holder and CEO at REMOTE EXPERTS",
+      'Leilani Montoya is a PHD, MBA, M.A, B.Sc. holder and CEO at REMOTE EXPERTS',
     ],
-    image: ["./img/generated_photos_5f896fca5bec830008385831.jpg"],
+    image: ['./img/generated_photos_5f896fca5bec830008385831.jpg'],
     description: [
-      "With nearly 15 years of experience working with job seekers and employers,",
+      'With nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
-    name: "Levi Barron",
+    name: 'Levi Barron',
     speakerInfo: [
-      "Levi Barron Master of HR, BBA instructor at USJ, HR Consultant",
+      'Levi Barron Master of HR, BBA instructor at USJ, HR Consultant',
     ],
-    image: ["./img/generated_photos_5e6801c56d3b380006d3cf13.jpg"],
+    image: ['./img/generated_photos_5e6801c56d3b380006d3cf13.jpg'],
     description: [
-      "With nearly 15 years of experience working with job seekers and employers,",
+      'With nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
-    name: "Lia Crane",
+    name: 'Lia Crane',
     speakerInfo: [
-      "Lia creane is the Career Development Manager for the career coaching program",
+      'Lia creane is the Career Development Manager for the career coaching program',
     ],
-    image: ["./img/generated_photos_5e680e326d3b380006d6a253.jpg"],
+    image: ['./img/generated_photos_5e680e326d3b380006d6a253.jpg'],
     description: [
-      "nearly 15 years of experience working with job seekers and employers,",
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
-    name: "Alfred Donaldson",
+    name: 'Alfred Donaldson',
     speakerInfo: [
-      "Alfred Donaldson is a PHD, MBA, M.A, B.Sc. holder and CEO at REMOTE EXPERTS",
+      'Alfred Donaldson is a PHD, MBA, M.A, B.Sc. holder and CEO at REMOTE EXPERTS',
     ],
-    image: ["./img/generated_photos_5e6810cb6d3b380006d73d63.jpg"],
+    image: ['./img/generated_photos_5e6810cb6d3b380006d73d63.jpg'],
     description: [
-      "nearly 15 years of experience working with job seekers and employers,",
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
-    name: "Javion Hobbs",
+    name: 'Javion Hobbs',
     speakerInfo: [
-      "Javion Hobbs is the Career Development Manager at REMOTE EXPERTS",
+      'Javion Hobbs is the Career Development Manager at REMOTE EXPERTS',
     ],
-    image: ["./img/generated_photos_5e68588e6d3b380006e72197.jpg"],
+    image: ['./img/generated_photos_5e68588e6d3b380006e72197.jpg'],
     description: [
-      "nearly 15 years of experience working with job seekers and employers,",
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
   {
-    name: "Kelvin Calderon",
+    name: 'Kelvin Calderon',
     speakerInfo: [
-      "Kelvin Calderon is the Career Development Manager at REMOTE EXPERTS",
+      'Kelvin Calderon is the Career Development Manager at REMOTE EXPERTS',
     ],
-    image: ["./img/generated_photos_5f1804011f67b0000678ae42.jpg"],
+    image: ['./img/generated_photos_5f1804011f67b0000678ae42.jpg'],
     description: [
-      "nearly 15 years of experience working with job seekers and employers,",
+      'nearly 15 years of experience working with job seekers and employers,',
     ],
   },
 ];
 
 function createFeaturedSection() {
-  const featuredSectionHeader = document.createElement("div");
-  const featuredSectionBoy = document.createElement("div");
+  const featuredSectionHeader = document.createElement('div');
+  const featuredSectionBoy = document.createElement('div');
   featuredSectionHeader.setAttribute(
-    "class",
-    "featured-section__header featured-element"
+    'class',
+    'featured-section__header featured-element',
   );
   featuredSectionBoy.setAttribute(
-    "class",
-    "featured-section__body featured-element"
+    'class',
+    'featured-section__body featured-element',
   );
   featuredSection.appendChild(featuredSectionHeader);
   featuredSection.appendChild(featuredSectionBoy);
