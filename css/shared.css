@@ -331,7 +331,7 @@ a {
   display: none;
 }
 
-/* Featured Teachers */
+/* Featured Teachers
 
 .featured-section {
   width: 100%;
@@ -418,7 +418,7 @@ a {
   .speaker-container__img {
     background-image: url(../img/checkerboard-squares-black-white.jpg);
   }
-}
+} */
 
 /* partner-section */
 
@@ -537,4 +537,10 @@ a {
   .reserved-rights {
     font-size: 2.2rem;
   }
+}
+
+/* no scroll class */
+
+.no-scroll {
+  overflow: hidden;
 }
