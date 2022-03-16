@@ -95,6 +95,8 @@
   }
 }
 
+/* clients */
+
 .clients {
   padding: 10rem 3rem;
 }
@@ -168,4 +170,30 @@
   .red-filter {
     font-size: 2.5rem;
   }
+}
+
+/* Partner section */
+
+.reserved-rights {
+  color: var(--color-accent);
+}
+
+.footer-log p {
+  color: var(--color-accent);
+}
+
+.icon {
+  fill: var(--color-accent);
+}
+
+@media screen and (min-width: 768px) {
+  .partner-section {
+    display: none;
+  }
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: var(--color-heading);
 }

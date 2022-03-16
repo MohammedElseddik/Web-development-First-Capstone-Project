@@ -331,94 +331,58 @@ a {
   display: none;
 }
 
-/* Featured Teachers
+/* Mobile menu */
 
-.featured-section {
+.mobile-menu__nav {
+  background-color: var(--color-heading);
+  bottom: 0;
+  left: 0;
+  opacity: 0.95;
+  padding: 2.2rem 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
-  padding: 5rem 2rem;
 }
 
-.featured-section__body {
-  padding: 4rem 0;
-}
-
-.featured-section__header {
-  display: flex;
-  flex-direction: column;
+.mobile-menu {
   align-items: center;
-  gap: 1.2rem;
-}
-
-.featured-section__title {
-  font-family: "Lato", sans-serif;
-  color: var(--color-body-text);
-  font-size: 2.8rem;
-}
-
-.speaker-container {
+  align-items: flex-start;
   display: flex;
-  gap: 1em;
-  padding: 2rem 1rem;
+  flex-direction: column;
+  font-family: var(--font-familly-cocogoose);
+  font-size: 2.5rem;
+  font-weight: 700;
+  gap: 2.5rem;
+  justify-content: center;
+  padding: 8rem 0;
   width: 100%;
 }
 
-.speaker-container__img {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 0 0 0 2rem;
-  background-image: url(../img/checkerboard-squares-black-white.jpg);
-  background-size: 40%;
-  background-repeat: no-repeat;
-  width: 140px;
-  height: 140px;
+.mobile-menu__item {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: 3px solid var(--color-accent);
 }
 
-.speaker-container__img img {
-  width: 130px;
-  height: 130px;
-}
-
-.speaker {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 1.3rem;
-}
-
-.speaker__info {
+.mobile-menu__item > a:hover {
   color: var(--color-secondary);
-  font-size: 1.4rem;
 }
 
-.gray-line {
-  width: 30px;
-  height: 2px;
+.transform.first-bar {
+  background-color: var(--color-accent);
+  left: 1px;
+  position: relative;
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+.transform.third-bar {
+  transform: rotate(-45deg);
+  position: relative;
   background-color: var(--color-accent);
 }
-
-.speaker__description {
-  flex: 1;
-  font-size: 1.3rem;
-}
-
-@media screen and (min-width: 768px) {
-  .featured-section__body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 4%;
-    justify-items: stretch;
-    align-items: stretch;
-    padding: 7rem 21rem;
-  }
-
-  .speaker-container__img {
-    background-image: url(../img/checkerboard-squares-black-white.jpg);
-  }
-} */
 
 /* partner-section */
 
