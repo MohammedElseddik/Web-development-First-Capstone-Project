@@ -63,3 +63,69 @@
     font-size: 1.9rem;
   }
 }
+
+/* Main Program */
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-primary);
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.main-program__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-program__title {
+  font-size: 2.3rem;
+  font-family: "Lato", sans-serif;
+  color: var(--color-accent);
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+}
+
+.red-line {
+  width: 70px;
+  height: 2px;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.sub-progran__name {
+  color: var(--color-secondary);
+}
+
+.sub-progran__description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #fff;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-program {
+    gap: 4rem;
+    padding: 6rem 16rem;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+  }
+
+  .main-program__title {
+    font-size: 3rem;
+  }
+
+  .sub-progran__description {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 1.7;
+  }
+}
