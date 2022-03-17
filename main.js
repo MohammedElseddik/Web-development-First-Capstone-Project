@@ -107,11 +107,11 @@ function createFeaturedSection() {
     <div class="red-line"></div>
     </div>`;
   for (let i = 0; i < projectObjects.length; i += 1) {
-    featuredSectionBoy.innerHTML += `<div class="speaker-container">
+    featuredSectionBoy.innerHTML += `<article class="speaker-container">
           <div class="speaker-container__img">
             <img
               src="${projectObjects[i].image[0]}"
-              alt=""
+              alt="image of our spreaker his name ${projectObjects[i].name}"
             />
           </div>
           <div class="speaker">
@@ -122,7 +122,7 @@ function createFeaturedSection() {
             <div class="gray-line"></div>
             <p class="speaker__description">${projectObjects[i].description[0]}</p>
           </div>
-        </div>`;
+        </article>`;
   }
   featuredSection.appendChild(featuredSectionHeader);
   featuredSection.appendChild(featuredSectionBoy);
